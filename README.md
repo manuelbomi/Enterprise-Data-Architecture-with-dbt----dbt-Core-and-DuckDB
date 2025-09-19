@@ -198,7 +198,7 @@ Code
 1. Open PowerShell, cd to repo:
    
 ```powershell
-cd "C:\Users\Owner\Desktop\Projects 2025\dbt\enterprise-data-architecture-with-dbt"
+cd "C:\Users\Owner\Desktop\ProjectsEmmOye2025\dbt\enterprise-data-architecture-with-dbt"
 ```
 
 
@@ -215,6 +215,14 @@ python -m pip install --upgrade pip
 pip install dbt-duckdb
 ```
 
+4. Create your dbt profile (outside the repo):
+```
+Create directory %USERPROFILE%\.dbt if it doesn't exist.
+
+Save the provided profiles.yml content (see section below) at:
+C:\Users\......\.dbt\profiles.yml
+
+```
 
 
 
