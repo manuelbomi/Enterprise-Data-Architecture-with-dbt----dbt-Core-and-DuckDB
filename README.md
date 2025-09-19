@@ -290,26 +290,6 @@ If DuckDB CLI is missing, download duckdb.exe and add its folder to your PATH or
 
 ---
 
-             [Batch Source Data]
-               /      |       \
-            CRM    Events    Trades
-             |        |         |
-          [dbt] --transforms--> [Warehouse (Snowflake / BigQuery)]
-             |
-             +--> [Export modeled data as Parquet/CSV/Stream]
-                      |
-                 [Python + PyKX]
-                      |
-                  [kdb+/q Engine]
-               (real-time analytics)
-                      |
-             Dashboards / Alerts / ML
-
-
-Thank you for reading
-
----
-
 ### **AUTHOR'S BACKGROUND**
 ### Author's Name:  Emmanuel Oyekanlu
 ```
