@@ -224,6 +224,68 @@ C:\Users\......\.dbt\profiles.yml
 
 ```
 
+5. Make sure path points to an absolute location where the toy_store.duckdb will be created.
+
+(Optional) check dbt:
+```
+dbt --version
+dbt debug
+```
+
+6. Seed the raw CSV into DuckDB:
+```
+dbt seed
+
+```
+
+7. Build models:
+```
+dbt run
+
+```
+
+8. Run tests:
+```
+dbt test
+
+```
+
+9. Generate docs:
+    
+```
+dbt docs generate
+dbt docs serve
+
+```
+
+### What you should see
+
+* dbt seed loads seeds/sales_data.csv into DuckDB as main_raw.sales_data (schema depends on your profile target schema).
+
+* dbt run creates a staging.sales_data model (view) and marts.daily_sales (view or table depending on materialization).
+
+* dbt test runs not_null tests on order_date and total_revenue.
+  
+
+### Next steps if expanding this repo
+
+* Add more tests: unique, accepted_values, or relationships.
+
+* Add more marts: product_level_sales.sql, monthly_sales.sql.
+
+* Add snapshots for slowly changing dimensions.
+
+* Add CI/CD to run dbt run and dbt test on PRs.
+
+### Troubleshooting tips (Windows)
+
+If dbt cannot find your profile, confirm %USERPROFILE%\.dbt\profiles.yml exists and profile: <name> in dbt_project.yml matches.
+
+If a seed load fails, open the CSV in VS Code and re-save as UTF-8 (without BOM) and ensure delimiter is ,.
+
+If DuckDB CLI is missing, download duckdb.exe and add its folder to your PATH or call with full path.
+
+
 
 
 
