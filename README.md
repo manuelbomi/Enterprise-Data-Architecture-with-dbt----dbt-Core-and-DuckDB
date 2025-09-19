@@ -85,7 +85,7 @@ Code
 
 ##### Zero Infrastructure: DuckDB can run locally, in the browser, or embedded in applications. No need for a server or cloud cluster to spin up.
 
-#####  <ins>Enterprise benefit<ins>: Ideal for development, testing, prototyping, or edge analytics without provisioning infrastructure. Lowers costs and accelerates development cycles.
+#####  <ins>Enterprise benefit</ins>: Ideal for development, testing, prototyping, or edge analytics without provisioning infrastructure. Lowers costs and accelerates development cycles.
 
 
 
