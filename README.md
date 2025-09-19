@@ -181,7 +181,7 @@ Code
 
 ---
 
-* The repository contents are:
+** The repository contents are:
 
 - `seeds/sales_data.csv` — example raw data (toy store sales).
 - `models/staging/` — staging layer using `source()` to import raw data.
