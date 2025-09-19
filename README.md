@@ -11,21 +11,21 @@
 #### dbt (data build tool) is used to transform raw data into clean, tested, documented datasets using SQL. It brings software engineering practices (like modular code, version control, testing, and documentation) to data transformation workflows.
 
 #### The following are the important components of dbt
-    • <ins>Models</ins>: 
+    • Models: 
       SQL queries that define your data transformations. These are the heart of your dbt project.
-    • <ins>Sources</ins>: 
+    • Sources: 
       Declarations of your raw data tables in your data warehouse that dbt can reference.
-    • <ins>Tests</ins>: 
+    • Tests: 
       SQL queries or YAML configurations to validate the quality and integrity of your data.
-    • <ins>Macros</ins>: 
+    • Macros: 
       Reusable Jinja code snippets that can be embedded within your SQL models for dynamic logic.
-    • <ins>Seeds</ins>: 
+    • Seeds: 
       Small CSV files used to load static data into your data warehouse for testing or reference.
 
 ####  Choosing dbt Setup:
-    • <ins>dbt Cloud</ins> : 
+    • dbt Cloud: 
       Offers a web-based IDE, simplified setup, and managed infrastructure. A free developer tier is available.
-    • <ins>dbt Core</ins>: 
+    • dbt Core: 
       Requires local installation and managing your own environment, including connecting to a data warehouse and a Git repository.
 
 #### Connecting to an Enterprise Data Warehouse:
@@ -35,7 +35,7 @@
 
 #### Initializing a dbt project:
 Code
-      *dbt init project_name*
+    *dbt init project_name*
     
     • Define your sources: 
     
