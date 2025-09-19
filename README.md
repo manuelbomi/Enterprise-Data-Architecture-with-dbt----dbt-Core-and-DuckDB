@@ -173,16 +173,15 @@ Code
 ---
 ---
 
-# How to Use this Repo for Enterprise Data Architecture
+# How to Use this Repository for Enterprise Data Architecture
 
 #### The repository structure is as shown below:
 
 <img width="351" height="344" alt="Image" src="https://github.com/user-attachments/assets/c10b4fb7-92ca-4df2-a054-e236448c00e6" />
 
 ---
+
 * The repository contents are:
-
-
 
 - `seeds/sales_data.csv` — example raw data (toy store sales).
 - `models/staging/` — staging layer using `source()` to import raw data.
@@ -193,12 +192,27 @@ Code
 
 ---
 
-* After git clonning the repository, On Windows, assume repo is at: C:\Users\Owner\Desktop\ProjectsEmmOye2025\dbt\enterprise-data-architecture-with-dbt
+* After git clonning the repository, on Windows OS, assume repo is at: C:\Users\Owner\Desktop\ProjectsEmmOye2025\dbt\enterprise-data-architecture-with-dbt
 
 
 1. Open PowerShell, cd to repo:
+   
 ```powershell
 cd "C:\Users\Owner\Desktop\Projects 2025\dbt\enterprise-data-architecture-with-dbt"
+
+
+2. Create & activate a virtualenv:
+
+python -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+.\.venv\Scripts\Activate.ps1
+
+3. Install dbt + duckdb adapter:
+
+python -m pip install --upgrade pip
+pip install dbt-duckdb
+
+
 
 
 
