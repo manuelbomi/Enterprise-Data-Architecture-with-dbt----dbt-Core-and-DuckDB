@@ -6,7 +6,7 @@
 
 ---
 
-## Brief Overview of dbt Application
+## Brief Overview of dbt Application to SQL Queries
 
 #### dbt (data build tool) is used to transform raw data into clean, tested, documented datasets using SQL. It brings software engineering practices (like modular code, version control, testing, and documentation) to data transformation workflows.
 
