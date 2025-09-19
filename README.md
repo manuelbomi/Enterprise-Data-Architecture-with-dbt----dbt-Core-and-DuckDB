@@ -34,8 +34,9 @@
 
 
 #### Initializing a dbt project:
-Code
-    *dbt init project_name*
+```
+dbt init project_name
+```
     
     • Define your sources: 
     
