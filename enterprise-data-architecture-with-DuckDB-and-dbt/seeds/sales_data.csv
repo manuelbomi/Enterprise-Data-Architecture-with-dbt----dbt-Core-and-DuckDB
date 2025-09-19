@@ -1,0 +1,6 @@
+order_id,product,category,price,quantity,order_date
+1,Lego Set,Toys,29.99,2,2025-09-01
+2,Action Figure,Toys,14.99,1,2025-09-01
+3,Board Game,Games,39.99,1,2025-09-02
+4,Puzzle,Games,9.99,3,2025-09-02
+5,RC Car,Toys,49.99,1,2025-09-03

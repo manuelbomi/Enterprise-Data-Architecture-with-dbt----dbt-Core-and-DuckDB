@@ -1,0 +1,37 @@
+
+---
+
+## 2) `dbt_project.yml`
+```yaml
+name: enterprise_data_architecture_with_dbt
+version: '1.0.0'
+config-version: 2
+
+# Must match a profile name in %USERPROFILE%\.dbt\profiles.yml
+profile: enterprise_data_architecture_with_dbt
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+# Ensure seeds load into the raw schema for local demo
+seeds:
+  enterprise_data_architecture_with_dbt:
+    +schema: main_raw
+    sales_data:
+      +column_types:
+        order_id: INTEGER
+        product: TEXT
+        category: TEXT
+        price: FLOAT
+        quantity: INTEGER
+        order_date: DATE
+      +delimiter: ","
+      +quote: '"'
+
+models:
+  enterprise_data_architecture_with_dbt:
+    +materialized: view
+    staging:
+      +schema: main_raw
+    marts:
+      +schema: main_marts

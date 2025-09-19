@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main_raw   # matches where seeds are loaded
+    tables:
+      - name: sales_data
+        description: "Seeded raw sales data for demo"
