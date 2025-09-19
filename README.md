@@ -173,5 +173,34 @@ Code
 ---
 ---
 
-# What’s in this repo
+# How to Use this Repo for Enterprise Data Architecture
+
+#### The repository structure is as shown below:
+
+<img width="351" height="344" alt="Image" src="https://github.com/user-attachments/assets/c10b4fb7-92ca-4df2-a054-e236448c00e6" />
+
+---
+* The repository contents are:
+
+
+
+- `seeds/sales_data.csv` — example raw data (toy store sales).
+- `models/staging/` — staging layer using `source()` to import raw data.
+- `models/marts/` — example mart that aggregates daily revenue.
+- `marts.yml` — model docs + tests.
+- `dbt_project.yml` — project settings, seeds config.
+- `profiles.yml` → **NOT in repo** (see instructions below).
+
+---
+
+* After git clonning the repository, On Windows, assume repo is at: C:\Users\Owner\Desktop\ProjectsEmmOye2025\dbt\enterprise-data-architecture-with-dbt
+
+
+1. Open PowerShell, cd to repo:
+```powershell
+cd "C:\Users\Owner\Desktop\Projects 2025\dbt\enterprise-data-architecture-with-dbt"
+
+
+
+
 
