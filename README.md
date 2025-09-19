@@ -199,18 +199,21 @@ Code
    
 ```powershell
 cd "C:\Users\Owner\Desktop\Projects 2025\dbt\enterprise-data-architecture-with-dbt"
+```
 
 
 2. Create & activate a virtualenv:
-
+```
 python -m venv .venv
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 .\.venv\Scripts\Activate.ps1
+```
 
 3. Install dbt + duckdb adapter:
-
+```
 python -m pip install --upgrade pip
 pip install dbt-duckdb
+```
 
 
 
